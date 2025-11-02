@@ -1,8 +1,13 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
+/**
+ * Next.js configuration
+ * - Pages Router enabled (no App Router)
+ * - SWC React compiler (default)
+ */
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  // You can put other Next.js settings here
+  reactStrictMode: true, // recommended for catching potential issues
 };
 
 export default nextConfig;
