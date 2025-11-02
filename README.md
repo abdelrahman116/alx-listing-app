@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ALX Listing App
 
-## Getting Started
+The **ALX Listing App** is a web application inspired by Airbnb. It allows users to browse and view property listings with details such as images, descriptions, pricing, and amenities. The main goal of this project is to replicate the core functionality and design of an Airbnb listing page, focusing on clean UI, reusable components, and scalable architecture.
 
-First, run the development server:
+## 🏠 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project aims to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Recreate the Airbnb listing page interface.
+- Practice building modular and maintainable front-end components.
+- Implement reusable TypeScript interfaces for type safety.
+- Organize assets and constants for consistent and scalable development.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Below is an overview of the main directories and their purposes:
 
-## Learn More
+### `components/`
 
-To learn more about Next.js, take a look at the following resources:
+This directory contains all the **reusable UI components** used throughout the app.  
+Examples include:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Listing cards
+- Navigation bars
+- Image galleries
+- Booking forms
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Each component is built to be modular, customizable, and maintainable.
 
-## Deploy on Vercel
+### `interfaces/`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This directory defines all the **TypeScript interfaces and types** used across the project.  
+They help enforce data structure consistency, improve code readability, and reduce bugs.  
+Examples:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `Listing` interface defining property details.
+- `User` interface defining host or guest information.
+
+### `constants/`
+
+This directory stores **fixed data and configuration values** used throughout the app.  
+Examples:
+
+- API endpoints
+- Default filter values
+- Reusable string or numeric constants
+
+Keeping constants centralized makes it easier to maintain and update app-wide settings.
+
+### `public/assets/`
+
+This folder holds **static assets** such as images, icons, and other media files used in the UI.  
+Examples:
+
+- Property images
+- Logo and brand assets
+- Icons and placeholders
+
+Assets stored here are publicly accessible and can be referenced directly in the frontend.
+
+---
+
+## 🚀 Future Enhancements
+
+- Add backend integration for dynamic listings.
+- Implement user authentication and reviews.
+- Enable map integration for location-based browsing.
+
+---
+
+**Author:** ALX Project Team  
+**License:** MIT
